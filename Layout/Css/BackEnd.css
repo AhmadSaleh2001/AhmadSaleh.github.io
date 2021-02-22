@@ -1,0 +1,380 @@
+*
+{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body
+{
+    font-family: "Ubuntu";
+    overflow-x: hidden;
+}
+
+/* Start Navbar */
+
+.Navbar
+{
+    padding:10px;
+    font : normal bold 20px "Ubuntu";
+    border-bottom: 2px solid #e2e2e2;
+    position: fixed;
+    width:100%;
+    z-index: 101;
+}
+
+.Navbar .Overlay
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    -webkit-backdrop-filter: blur(8px);
+    -moz-backdrop-filter: blur(8px);
+    -o-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.Navbar .container
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.Navbar .NavLinks
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width:30%;
+    margin:0px;
+    font:normal bold 15px "Ubuntu";
+    color : #666667;
+    
+}
+
+
+
+.Navbar .Logo
+{
+    cursor: pointer;
+}
+
+.Navbar .NavLinks li
+{
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    padding:10px 15px;
+}
+
+.Navbar .NavLinks li:hover
+{
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #ebebeb;
+}
+.RequestProject
+{
+    font : normal normal 20px "Ubuntu";
+    color : #419aee !important;
+    cursor: pointer;
+    padding:10px 15px;
+      -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}   
+
+.RequestProject:hover
+{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #ebebeb;
+}
+
+.ShowLinks 
+{
+    cursor: pointer;
+}
+
+.NavLinks2
+{
+    padding:15px;
+    background-color: #adadad;
+    width:50%;
+    height: 100%;
+    font : normal bold 20px "Ubuntu";
+    color : white;
+    position: fixed;
+    z-index: 100;
+    right:0;
+    
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    transform: translateX(100%);
+}
+
+.NavLinkActive
+{
+    transform: translateX(0%) !important;
+}
+
+.NavLinks2 > ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.NavLinks2 > ul > li
+{
+    display: block;
+    padding:50px 10px;
+    transform: translateX(100%);
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* End Navbar */
+
+
+/* Start MyInfo */
+
+.MyInfo
+{
+    padding:50px;
+}
+
+.MyInfo .row .Left
+{
+    width:100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.MyInfo .row .Left > img
+{
+    width:100%;
+    background-size: cover;
+    box-shadow: 3px 3px 5px #bcbcbc;
+    border-radius: 5px;
+}
+
+.MyInfo .row .Right
+{
+    padding:20px 40px;
+    margin-top: 150px;
+}
+
+.MyInfo .row .Right > h2
+{
+    font : normal bold 50px "Ubuntu";
+    color : #41b883;
+}
+
+.MyInfo .row .Right > p
+{
+    font : normal bold 20px "Ubuntu";
+}
+
+.MyInfo .row .Right p:last-of-type
+{
+    font : normal normal 20px "Ubuntu";
+}
+
+.MyType
+{
+    font : normal normal 20px "Ubuntu";
+}
+
+/* End MyInfo */
+
+
+
+/* Start Benefits */
+
+.Benefits
+{
+    text-align: center;
+    background-color: #f7f7f7;
+    padding:50px;
+}
+
+.Benefits h2
+{
+    font : normal bold 50px "Ubuntu";
+    color : black;
+    margin-bottom: 50px;
+}
+
+.MyDesign
+{
+    background-color: white;
+    padding:30px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #eaeaea;
+    border:1px solid #eaeaea;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+.MyDesign > p
+{
+    font : normal bold 14px "Ubuntu";
+    line-height: 1.6;
+}
+
+.MyDesign > img
+{
+    background-position: center;
+    background-size: cover;
+    width:100%;
+}
+
+.MyDesign > div > span
+{
+    font : normal bold 20px "Ubuntu";
+    padding:10px 5px;
+}
+
+.MyDesign > div > span > img
+{
+    background-size: cover;
+    background-position: center;
+    width:70px;
+    
+}
+
+.MyDesign > ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    font : normal bold 20px "Ubuntu";
+}
+
+.MyDesign > ul > li
+{
+    margin-top: 15%;
+}
+
+.MyFlex
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Gray
+{
+    color : #ababab;
+}
+
+/* End Benefits */
+
+
+
+/* Start MyProjects */
+.MyProjects
+{
+    padding:50px;
+    text-align: center;
+}
+
+.MyProjects .container h2
+{
+    font : normal bold 50px "Ubuntu";
+}
+
+.MyProjects .container p
+{
+    font : normal bold 18px "Ubuntu";
+    padding:15px;
+}
+
+.MyProjects .row > div
+{
+    width:100%;
+    height: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+.MyProjects .row > div:hover
+{
+    -webkit-transform:scale(1.1);
+}
+
+.MyProjects .row > div > img
+{
+    width:100%;
+    background-size: cover;
+    border:2px solid #d4d4d4;
+    border-radius: 6px;
+}
+/* End MyProjects */
+
+
+
+/* Start Contact */
+
+.Contact
+{
+    padding:50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.Contact h2
+{
+    font : normal bold 50px "Ubuntu";
+}
+
+.Contact .Item
+{
+    padding:10px;
+    box-shadow: 5px 5px 5px #d6d6d6;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.Contact .Icon
+{
+    border : 4px solid blue;
+    width:140px;
+    height: 140px;
+    border-radius: 50%;
+    border-color: #41b883 black; 
+    padding-top: 20px;
+}
+
+
+.Contact .Info
+{
+    padding:10px;
+    
+}
+
+/* End Contact */
